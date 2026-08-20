@@ -1,0 +1,35 @@
+name: Web checks
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        shell: bash
+        run: |
+          test -f index.html
+          test -f styles.css
+          grep -qi '<!doctype html>' index.html
+          grep -qi '<html lang="es">' index.html
+          grep -qi 'name="viewport"' index.html
+          grep -qi 'href="styles.css"' index.html
+
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5validator-action@v8.0.0
+        with:
+          root: .
+          css: true
