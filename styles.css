@@ -229,7 +229,7 @@ h1 {
 
 .hero-visual {
   position: relative;
-  min-height: 530px;
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 1.5rem;
@@ -239,92 +239,10 @@ h1 {
   box-shadow: 0 38px 90px rgba(0, 0, 0, 0.34);
 }
 
-.technical-grid {
-  position: absolute;
-  inset: 0;
-  opacity: 0.2;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
-  background-size: 42px 42px;
-}
-
-.spindle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: flex;
-  align-items: center;
-  width: 440px;
-  height: 150px;
-  transform: translate(-48%, -50%) rotate(-28deg);
-  filter: drop-shadow(0 28px 22px rgba(0, 0, 0, 0.45));
-}
-
-.spindle-cap {
-  width: 48px;
-  height: 78px;
-  border-radius: 18px 4px 4px 18px;
-  background: linear-gradient(180deg, #9ba7b2, #3d4d5a 45%, #bac4cc);
-}
-
-.spindle-body {
-  width: 225px;
-  height: 138px;
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  border-radius: 8px 22px 22px 8px;
-  background:
-    repeating-linear-gradient(90deg, transparent 0 17px, rgba(0, 0, 0, 0.14) 17px 19px),
-    linear-gradient(180deg, #e9edf0, #5f6e79 48%, #c9d0d5);
-}
-
-.spindle-ring {
-  width: 62px;
-  height: 118px;
-  margin-left: -4px;
-  border-radius: 8px;
-  background: linear-gradient(180deg, #74838f, #1d2a34 48%, #71808b);
-}
-
-.spindle-shaft {
-  width: 105px;
-  height: 44px;
-  background: linear-gradient(180deg, #dfe5e9, #596975 50%, #d6dde1);
-  clip-path: polygon(0 0, 82% 0, 100% 28%, 100% 72%, 82% 100%, 0 100%);
-}
-
-.spec {
-  position: absolute;
-  padding: 0.65rem 0.8rem;
-  border: 1px solid var(--line);
-  border-radius: 0.55rem;
-  background: rgba(8, 19, 31, 0.82);
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  backdrop-filter: blur(10px);
-}
-
-.spec span {
-  margin-right: 0.35rem;
-  color: var(--accent);
-}
-
-.spec-one {
-  top: 14%;
-  left: 9%;
-}
-
-.spec-two {
-  right: 8%;
-  bottom: 18%;
-}
-
-.spec-three {
-  bottom: 9%;
-  left: 16%;
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .trust-strip {
@@ -573,10 +491,6 @@ footer p {
     padding-top: 6rem;
   }
 
-  .hero-visual {
-    min-height: 440px;
-  }
-
   .section-heading,
   .contact {
     grid-template-columns: 1fr;
@@ -621,15 +535,6 @@ footer p {
 
   h1 {
     font-size: clamp(3rem, 15vw, 4.5rem);
-  }
-
-  .hero-visual {
-    min-height: 360px;
-  }
-
-  .spindle {
-    width: 330px;
-    transform: translate(-50%, -50%) rotate(-28deg) scale(0.78);
   }
 
   .trust-strip {
