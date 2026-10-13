@@ -1,24 +1,11 @@
-# RHM Spindle Rebuilding Specialists
+# Código fuente de rhmspindle.com.mx
 
-Sitio web oficial de RHM Spindle Rebuilding Specialists, empresa ubicada en Silao, Guanajuato, con servicio en el Bajío y el resto de México.
+Este repositorio se utiliza únicamente para publicar el sitio web de RHM mediante GitHub Pages.
 
-## Servicios
+La información oficial sobre la empresa, sus servicios y sus medios de contacto se encuentra en:
 
-- Reparación de electrospindles.
-- Reparación de spindles mecánicos y cartuchos.
-- Reparación de spindles para contrapuntos de torno CNC.
-- Maquinados de precisión.
-- Torneado, fresado y rectificado.
-- Reparación de servomotores y motores.
-- Reparación de drives, tarjetas, variadores, fuentes y otros componentes electrónicos.
+## [Visitar rhmspindle.com.mx](https://rhmspindle.com.mx/)
 
-## Contacto
+## Publicación
 
-- Teléfono: [472 121 7771](tel:+524721217771)
-- Teléfono y WhatsApp: [449 803 2697](https://wa.me/524498032697)
-- Correo: [ingcardoza@hotmail.com](mailto:ingcardoza@hotmail.com)
-- Ubicación: Silao, Guanajuato, México
-
-## Sitio web
-
-[Visitar RHM Spindle Rebuilding Specialists](https://rhm-spindle-rebuilding.github.io/)
+El sitio se publica desde la rama `main` y utiliza el dominio personalizado `rhmspindle.com.mx`.
